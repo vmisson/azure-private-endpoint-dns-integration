@@ -1,4 +1,6 @@
-# Azure Private Endpoint DNS integration
+# Azure Private Endpoint DNS integration : one policy to rule them all !
+
+![one policy to rule them all !](images/azure-policy.png)
 
 # Overview
 The challenge with Privte Endpoint is clearly the DNS integration and configuration. 
