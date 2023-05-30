@@ -1,0 +1,370 @@
+{
+    "private-zones-mapping": [
+        {
+            "resource": "Azure Automation",
+            "privateLinkResourceType": "Microsoft.Automation/automationAccounts",
+            "subresource": "Webhook",
+            "privateDnsZoneName": ["privatelink.azure-automation.net"]
+        },
+        {
+            "resource": "Azure Automation",
+            "privateLinkResourceType": "Microsoft.Automation/automationAccounts",
+            "subresource": "DSCAndHybridWorker",
+            "privateDnsZoneName": ["privatelink.azure-automation.net"]
+        },
+        {
+            "resource": "Azure SQL Database",
+            "privateLinkResourceType": "Microsoft.Sql/servers",
+            "subresource": "sqlServer",
+            "privateDnsZoneName": ["privatelink.database.windows.net"]
+        },
+        {
+            "resource": "Azure Synapse Analytics",
+            "privateLinkResourceType": "Microsoft.Synapse/workspaces",
+            "subresource": "Sql",
+            "privateDnsZoneName": ["privatelink.sql.azuresynapse.net"]
+        },
+        {
+            "resource": "Azure Synapse Analytics",
+            "privateLinkResourceType": "Microsoft.Synapse/workspaces",
+            "subresource": "SqlOnDemand",
+            "privateDnsZoneName": ["privatelink.sql.azuresynapse.net"]
+        },
+        {
+            "resource": "Azure Synapse Analytics",
+            "privateLinkResourceType": "Microsoft.Synapse/workspaces",
+            "subresource": "Dev",
+            "privateDnsZoneName": ["privatelink.dev.azuresynapse.net"]
+        },
+        {
+            "resource": "Azure Synapse Studio",
+            "privateLinkResourceType": "Microsoft.Synapse/privateLinkHubs",
+            "subresource": "Web",
+            "privateDnsZoneName": ["privatelink.azuresynapse.net"]
+        },
+        {
+            "resource": "Storage account",
+            "privateLinkResourceType": "Microsoft.Storage/storageAccounts",
+            "subresource": "blob",
+            "privateDnsZoneName": ["privatelink.blob.core.windows.net"]
+        },
+        {
+            "resource": "Storage account",
+            "privateLinkResourceType": "Microsoft.Storage/storageAccounts",
+            "subresource": "table",
+            "privateDnsZoneName": ["privatelink.table.core.windows.net"]
+        },
+        {
+            "resource": "Storage account",
+            "privateLinkResourceType": "Microsoft.Storage/storageAccounts",
+            "subresource": "queue",
+            "privateDnsZoneName": ["privatelink.queue.core.windows.net"]
+        },
+        {
+            "resource": "Storage account",
+            "privateLinkResourceType": "Microsoft.Storage/storageAccounts",
+            "subresource": "file",
+            "privateDnsZoneName": ["privatelink.file.core.windows.net"]
+        },
+        {
+            "resource": "Storage account",
+            "privateLinkResourceType": "Microsoft.Storage/storageAccounts",
+            "subresource": "web",
+            "privateDnsZoneName": ["privatelink.web.core.windows.net"]
+        },
+        {
+            "resource": "Azure Data Lake File System Gen2",
+            "privateLinkResourceType": "Microsoft.Storage/storageAccounts",
+            "subresource": "dfs",
+            "privateDnsZoneName": ["privatelink.dfs.core.windows.net"]
+        },
+        {
+            "resource": "Azure Cosmos DB",
+            "privateLinkResourceType": "Microsoft.DocumentDb/databaseAccounts",
+            "subresource": "Sql",
+            "privateDnsZoneName": ["privatelink.documents.azure.com"]
+        },
+        {
+            "resource": "Azure Cosmos DB",
+            "privateLinkResourceType": "Microsoft.DocumentDb/databaseAccounts",
+            "subresource": "MongoDB",
+            "privateDnsZoneName": ["privatelink.mongo.cosmos.azure.com"]
+        },
+        {
+            "resource": "Azure Cosmos DB",
+            "privateLinkResourceType": "Microsoft.DocumentDb/databaseAccounts",
+            "subresource": "Cassandra",
+            "privateDnsZoneName": ["privatelink.cassandra.cosmos.azure.com"]
+        },
+        {
+            "resource": "Azure Cosmos DB",
+            "privateLinkResourceType": "Microsoft.DocumentDb/databaseAccounts",
+            "subresource": "Gremlin",
+            "privateDnsZoneName": ["privatelink.gremlin.cosmos.azure.com"]
+        },
+        {
+            "resource": "Azure Cosmos DB",
+            "privateLinkResourceType": "Microsoft.DocumentDb/databaseAccounts",
+            "subresource": "Table",
+            "privateDnsZoneName": ["privatelink.table.cosmos.azure.com"]
+        },
+        {
+            "resource": "Azure Batch",
+            "privateLinkResourceType": "Microsoft.Batch/batchAccounts",
+            "subresource": "batchAccount",
+            "privateDnsZoneName": ["privatelink.batch.azure.com"]
+        },
+        {
+            "resource": "Azure Batch",
+            "privateLinkResourceType": "Microsoft.Batch/batchAccounts",
+            "subresource": "nodeManagement",
+            "privateDnsZoneName": ["privatelink.batch.azure.com"]
+        },
+        {
+            "resource": "Azure Database for PostgreSQL",
+            "privateLinkResourceType": "Microsoft.DBforPostgreSQL/servers",
+            "subresource": "postgresServer",
+            "privateDnsZoneName": ["privatelink.postgres.database.azure.com"]
+        },
+        {
+            "resource": "Azure Database for MySQL",
+            "privateLinkResourceType": "Microsoft.DBforMySQL/servers",
+            "subresource": "mysqlServer",
+            "privateDnsZoneName": ["privatelink.mysql.database.azure.com"]
+        },
+        {
+            "resource": "Azure Database for MariaDB",
+            "privateLinkResourceType": "Microsoft.DBforMariaDB/servers",
+            "subresource": "mariadbServer",
+            "privateDnsZoneName": ["privatelink.mariadb.database.azure.com"]
+        },
+        {
+            "resource": "Azure Key Vault",
+            "privateLinkResourceType": "Microsoft.KeyVault/vaults",
+            "subresource": "vault",
+            "privateDnsZoneName": ["privatelink.vaultcore.azure.net"]
+        },
+        {
+            "resource": "Azure Key Vault",
+            "privateLinkResourceType": "Microsoft.KeyVault/managedHSMs",
+            "subresource": "managedHSM",
+            "privateDnsZoneName": ["privatelink.managedhsm.azure.net"]
+        },
+        {
+            "resource": "Azure Search",
+            "privateLinkResourceType": "Microsoft.Search/searchServices",
+            "subresource": "searchService",
+            "privateDnsZoneName": ["privatelink.search.windows.net"]
+        },
+        {
+            "resource": "Azure Container Registry",
+            "privateLinkResourceType": "Microsoft.ContainerRegistry/registries",
+            "subresource": "registry",
+            "privateDnsZoneName": ["privatelink.azurecr.io"]
+        },
+        {
+            "resource": "Azure App Configuration",
+            "privateLinkResourceType": "Microsoft.AppConfiguration/configurationStores",
+            "subresource": "configurationStores",
+            "privateDnsZoneName": ["privatelink.azconfig.io"]
+        },
+        {
+            "resource": "Azure Site Recovery",
+            "privateLinkResourceType": "Microsoft.RecoveryServices/vaults",
+            "subresource": "AzureSiteRecovery",
+            "privateDnsZoneName": ["privatelink.siterecovery.windowsazure.com"]
+        },
+        {
+            "resource": "Azure Event Hubs",
+            "privateLinkResourceType": "Microsoft.EventHub/namespaces",
+            "subresource": "namespace",
+            "privateDnsZoneName": ["privatelink.servicebus.windows.net"]
+        },
+        {
+            "resource": "Azure Service Bus",
+            "privateLinkResourceType": "Microsoft.ServiceBus/namespaces",
+            "subresource": "namespace",
+            "privateDnsZoneName": ["privatelink.servicebus.windows.net"]
+        },
+        {
+            "resource": "Azure IoT Hub",
+            "privateLinkResourceType": "Microsoft.Devices/IotHubs",
+            "subresource": "iotHub",
+            "privateDnsZoneName": ["privatelink.azure-devices.net", "privatelink.servicebus.windows.net"]
+        },
+        {
+            "resource": "Azure IoT Hub Device Provisioning Service",
+            "privateLinkResourceType": "Microsoft.Devices/ProvisioningServices",
+            "subresource": "iotDps",
+            "privateDnsZoneName": ["privatelink.azure-devices-provisioning.net"]
+        },
+        {
+            "resource": "Azure Relay",
+            "privateLinkResourceType": "Microsoft.Relay/namespaces",
+            "subresource": "namespace",
+            "privateDnsZoneName": ["privatelink.servicebus.windows.net"]
+        },
+        {
+            "resource": "Azure Event Grid",
+            "privateLinkResourceType": "Microsoft.EventGrid/topics",
+            "subresource": "topic",
+            "privateDnsZoneName": ["privatelink.eventgrid.azure.net"]
+        },
+        {
+            "resource": "Azure Event Grid",
+            "privateLinkResourceType": "Microsoft.EventGrid/domains",
+            "subresource": "domain",
+            "privateDnsZoneName": ["privatelink.eventgrid.azure.net"]
+        },
+        {
+            "resource": "Azure Web Apps",
+            "privateLinkResourceType": "Microsoft.Web/sites",
+            "subresource": "sites",
+            "privateDnsZoneName": ["privatelink.azurewebsites.net"]
+        },
+        {
+            "resource": "Azure Machine Learning",
+            "privateLinkResourceType": "Microsoft.MachineLearningServices/workspaces",
+            "subresource": "amlworkspace",
+            "privateDnsZoneName": ["privatelink.api.azureml.ms", "privatelink.notebooks.azure.net"]
+        },
+        {
+            "resource": "SignalR",
+            "privateLinkResourceType": "Microsoft.SignalRService/SignalR",
+            "subresource": "signalR",
+            "privateDnsZoneName": ["privatelink.service.signalr.net"]
+        },
+        {
+            "resource": "Azure Monitor",
+            "privateLinkResourceType": "Microsoft.Insights/privateLinkScopes",
+            "subresource": "azuremonitor",
+            "privateDnsZoneName": ["privatelink.monitor.azure.com", "privatelink.oms.opinsights.azure.com", "privatelink.ods.opinsights.azure.com", "privatelink.agentsvc.azure-automation.net", "privatelink.blob.core.windows.net", "privatelink.applicationinsights.azure.com"]
+        },
+        {
+            "resource": "Cognitive Services",
+            "privateLinkResourceType": "Microsoft.CognitiveServices/accounts",
+            "subresource": "account",
+            "privateDnsZoneName": ["privatelink.cognitiveservices.azure.com", "privatelink.openai.azure.com"]
+        },
+        {
+            "resource": "Azure File Sync",
+            "privateLinkResourceType": "Microsoft.StorageSync/storageSyncServices",
+            "subresource": "afs",
+            "privateDnsZoneName": ["privatelink.afs.azure.net"]
+        },
+        {
+            "resource": "Azure Data Factory",
+            "privateLinkResourceType": "Microsoft.DataFactory/factories",
+            "subresource": "dataFactory",
+            "privateDnsZoneName": ["privatelink.datafactory.azure.net"]
+        },
+        {
+            "resource": "Azure Data Factory",
+            "privateLinkResourceType": "Microsoft.DataFactory/factories",
+            "subresource": "portal",
+            "privateDnsZoneName": ["privatelink.adf.azure.com"]
+        },
+        {
+            "resource": "Azure Cache for Redis",
+            "privateLinkResourceType": "Microsoft.Cache/Redis",
+            "subresource": "redis",
+            "privateDnsZoneName": ["privatelink.redis.cache.windows.net"]
+        },
+        {
+            "resource": "Azure Cache for Redis",
+            "privateLinkResourceType": "Microsoft.Cache/RedisEnterprise",
+            "subresource": "redisEnterprise",
+            "privateDnsZoneName": ["privatelink.redis.cache.windows.net"]
+        },
+        {
+            "resource": "Microsoft Purview",
+            "privateLinkResourceType": "Microsoft.Purview",
+            "subresource": "account",
+            "privateDnsZoneName": ["privatelink.purview.azure.com"]
+        },
+        {
+            "resource": "Microsoft Purview",
+            "privateLinkResourceType": "Microsoft.Purview",
+            "subresource": "portal",
+            "privateDnsZoneName": ["privatelink.purviewstudio.azure.com"]
+        },
+        {
+            "resource": "Azure Digital Twins",
+            "privateLinkResourceType": "Microsoft.DigitalTwins/digitalTwinsInstances",
+            "subresource": "digitalTwinsInstances",
+            "privateDnsZoneName": ["privatelink.digitaltwins.azure.net"]
+        },
+        {
+            "resource": "Azure HDInsight",
+            "privateLinkResourceType": "Microsoft.HDInsight",
+            "subresource": "hdinsight",
+            "privateDnsZoneName": ["privatelink.azurehdinsight.net"]
+        },
+        {
+            "resource": "Azure Arc",
+            "privateLinkResourceType": "Microsoft.HybridCompute/hybridcompute",
+            "subresource": "his",
+            "privateDnsZoneName": ["privatelink.his.arc.azure.com", "privatelink.guestconfiguration.azure.com", "privatelink.kubernetesconfiguration.azure.com"]
+        },
+        {
+            "resource": "Azure Media Services",
+            "privateLinkResourceType": "Microsoft.Media/keydelivery",
+            "subresource": "keydelivery",
+            "privateDnsZoneName": ["privatelink.media.azure.net"]
+        },
+        {
+            "resource": "Azure Static Web Apps",
+            "privateLinkResourceType": "Microsoft.Web/staticSites",
+            "subresource": "staticSites",
+            "privateDnsZoneName": ["privatelink.azurestaticapps.net"]
+        },
+        {
+            "resource": "Azure Migrate",
+            "privateLinkResourceType": "Microsoft.Migrate/migrate",
+            "subresource": "projects",
+            "privateDnsZoneName": ["privatelink.prod.migration.windowsazure.com"]
+        },
+        {
+            "resource": "Azure Migrate",
+            "privateLinkResourceType": "Microsoft.Migrate/assessment",
+            "subresource": "project",
+            "privateDnsZoneName": ["privatelink.prod.migration.windowsazure.com"]
+        },
+        {
+            "resource": "Azure Migrate",
+            "privateLinkResourceType": "Microsoft.Migrate/discovery",
+            "subresource": "site",
+            "privateDnsZoneName": ["privatelink.prod.migration.windowsazure.com"]
+        },
+        {
+            "resource": "Azure API Management",
+            "privateLinkResourceType": "Microsoft.ApiManagement/service",
+            "subresource": "gateway",
+            "privateDnsZoneName": ["privatelink.azure-api.net"]
+        },
+        {
+            "resource": "Microsoft PowerBI",
+            "privateLinkResourceType": "Microsoft.PowerBI/privateLinkServicesForPowerBI",
+            "subresource": "privatelink.analysis.windows.net",
+            "privateDnsZoneName": ["privatelink.analysis.windows.net", "privatelink.pbidedicated.windows.net", "privatelink.tip1.powerquery.microsoft.com"]
+        },
+        {
+            "resource": "Azure Bot Service",
+            "privateLinkResourceType": "Microsoft.BotService/botServices",
+            "subresource": "Bot",
+            "privateDnsZoneName": ["privatelink.directline.botframework.com"]
+        },
+        {
+            "resource": "Azure Bot Service",
+            "privateLinkResourceType": "Microsoft.BotService/botServices",
+            "subresource": "Token",
+            "privateDnsZoneName": ["privatelink.token.botframework.com"]
+        },
+        {
+            "resource": "Azure Health Data Services",
+            "privateLinkResourceType": "Microsoft.HealthcareApis/workspaces",
+            "subresource": "healthcareworkspace",
+            "privateDnsZoneName": ["privatelink.workspace.azurehealthcareapis.com", "privatelink.fhir.azurehealthcareapis.com", "privatelink.dicom.azurehealthcareapis.com"]
+        }
+    ]
+}
