@@ -365,6 +365,12 @@
             "privateLinkResourceType": "Microsoft.HealthcareApis/workspaces",
             "subresource": "healthcareworkspace",
             "privateDnsZoneName": ["privatelink.workspace.azurehealthcareapis.com", "privatelink.fhir.azurehealthcareapis.com", "privatelink.dicom.azurehealthcareapis.com"]
+        },
+        {
+            "resource": "Azure Data Explorer",
+            "privateLinkResourceType": "Microsoft.Kusto/Clusters",
+            "subresource": "cluster",
+            "privateDnsZoneName": ["privatelink.westeurope.kusto.windows.net", "privatelink.blob.core.windows.net", "privatelink.table.core.windows.net", "privatelink.queue.core.windows.net"]
         }
     ]
 }

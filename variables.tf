@@ -15,5 +15,5 @@ variable "user_assigned_identity_name" {
 
 variable "deny_prive_dns_zone_creation" {
   type = bool
-  default = true
+  default = false
 }
