@@ -79,6 +79,42 @@
             "privateDnsZoneName": ["privatelink.dfs.core.windows.net"]
         },
         {
+            "resource": "Storage account",
+            "privateLinkResourceType": "Microsoft.Storage/storageAccounts",
+            "subresource": "blob_secondary",
+            "privateDnsZoneName": ["privatelink.blob.core.windows.net"]
+        },
+        {
+            "resource": "Storage account",
+            "privateLinkResourceType": "Microsoft.Storage/storageAccounts",
+            "subresource": "table_secondary",
+            "privateDnsZoneName": ["privatelink.table.core.windows.net"]
+        },
+        {
+            "resource": "Storage account",
+            "privateLinkResourceType": "Microsoft.Storage/storageAccounts",
+            "subresource": "queue_secondary",
+            "privateDnsZoneName": ["privatelink.queue.core.windows.net"]
+        },
+        {
+            "resource": "Storage account",
+            "privateLinkResourceType": "Microsoft.Storage/storageAccounts",
+            "subresource": "file_secondary",
+            "privateDnsZoneName": ["privatelink.file.core.windows.net"]
+        },
+        {
+            "resource": "Storage account",
+            "privateLinkResourceType": "Microsoft.Storage/storageAccounts",
+            "subresource": "web_secondary",
+            "privateDnsZoneName": ["privatelink.web.core.windows.net"]
+        },
+        {
+            "resource": "Azure Data Lake File System Gen2",
+            "privateLinkResourceType": "Microsoft.Storage/storageAccounts",
+            "subresource": "dfs_secondary",
+            "privateDnsZoneName": ["privatelink.dfs.core.windows.net"]
+        },        
+        {
             "resource": "Azure Cosmos DB",
             "privateLinkResourceType": "Microsoft.DocumentDb/databaseAccounts",
             "subresource": "Sql",
