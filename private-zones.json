@@ -267,7 +267,7 @@
         {
             "resource": "Azure Cache for Redis",
             "privateLinkResourceType": "Microsoft.Cache/Redis",
-            "subresource": "redis",
+            "subresource": "redisCache",
             "privateDnsZoneName": ["privatelink.redis.cache.windows.net"]
         },
         {
