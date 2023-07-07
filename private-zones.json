@@ -407,6 +407,18 @@
             "privateLinkResourceType": "Microsoft.Kusto/Clusters",
             "subresource": "cluster",
             "privateDnsZoneName": ["privatelink.westeurope.kusto.windows.net", "privatelink.blob.core.windows.net", "privatelink.table.core.windows.net", "privatelink.queue.core.windows.net"]
+        },
+        {
+            "resource": "Azure Databricks",
+            "privateLinkResourceType": "Microsoft.Databricks/workspaces",
+            "subresource": "databricks_ui_api",
+            "privateDnsZoneName": ["privatelink.azuredatabricks.net"]
+        },
+        {
+            "resource": "Azure Databricks",
+            "privateLinkResourceType": "Microsoft.Databricks/workspaces",
+            "subresource": "browser_authentication",
+            "privateDnsZoneName": ["privatelink.azuredatabricks.net"]
         }
     ]
 }
