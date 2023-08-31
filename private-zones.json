@@ -43,6 +43,12 @@
             "privateDnsZoneName": ["privatelink.azuresynapse.net"]
         },
         {
+            "resource": "Disk Accesses",
+            "privateLinkResourceType": "Microsoft.Compute/diskAccesses",
+            "subresource": "disks",
+            "privateDnsZoneName": ["privatelink.blob.core.windows.net"]
+        },
+        {
             "resource": "Storage account",
             "privateLinkResourceType": "Microsoft.Storage/storageAccounts",
             "subresource": "blob",
