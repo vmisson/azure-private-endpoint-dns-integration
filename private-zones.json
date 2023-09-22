@@ -358,7 +358,7 @@
             "resource": "Azure Static Web Apps",
             "privateLinkResourceType": "Microsoft.Web/staticSites",
             "subresource": "staticSites",
-            "privateDnsZoneName": ["privatelink.azurestaticapps.net"]
+            "privateDnsZoneName": ["privatelink.azurestaticapps.net", "privatelink.1.azurestaticapps.net", "privatelink.2.azurestaticapps.net", "privatelink.3.azurestaticapps.net"]
         },
         {
             "resource": "Azure Migrate",
