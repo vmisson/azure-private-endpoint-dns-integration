@@ -165,7 +165,7 @@
         {
             "resource": "Azure Database for PostgreSQL",
             "privateLinkResourceType": "Microsoft.DBforPostgreSQL/servers",
-            "subresource": "postgresServer",
+            "subresource": "postgresqlServer",
             "privateDnsZoneName": ["privatelink.postgres.database.azure.com"]
         },
         {
