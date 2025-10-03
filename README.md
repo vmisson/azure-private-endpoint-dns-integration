@@ -17,10 +17,10 @@ Azure creates a canonical name DNS record (CNAME) on the public DNS. The CNAME r
 ## Terraform deployment
 ### Requirements
 You will need to install : 
-* [Terraform](https://www.terraform.io/downloads.html) (tested with version v1.4.6)
+* [Terraform](https://www.terraform.io/downloads.html)
 * Terraform Providers (installed using command *terraform init*): 
-  * azurerm (tested with version v3.56.0)
-  * random (tested with version v3.5.1)
+  * azurerm (> v4.0)
+  * random
 
 ### Quickstart
 You can review and edit the mapping in file : private-zones.json and customize options in file : variables.tf
@@ -58,4 +58,41 @@ az policy definition create --name 'DenyPrivateDNSZones' --rules "`jq '.properti
 az policy assignment create --name 'deny-private-dns-zone' --policy 'DenyPrivateDNSZones'
 
 ```
+
+## Excluded DNS Zones
+
+The following DNS zones have been excluded from the configuration because they contain variables that need to be replaced at deployment time:
+
+### Completely Excluded Services
+- **Azure Kubernetes Service** (`Microsoft.ContainerService/managedClusters`)
+  - Excluded zones: `privatelink.{regionName}.azmk8s.io`, `{subzone}.privatelink.{regionName}.azmk8s.io`
+  - Reason: All zones contain region-specific variables
+
+- **Azure Container Apps** (`Microsoft.App/ManagedEnvironments`) 
+  - Excluded zones: `privatelink.{regionName}.azurecontainerapps.io`
+  - Reason: Zone contains region-specific variable
+
+- **Azure SQL Managed Instance** (`Microsoft.Sql/managedInstances`)
+  - Excluded zones: `privatelink.{dnsPrefix}.database.windows.net`
+  - Reason: Zone contains DNS prefix variable
+
+### Partially Excluded Zones
+- **Azure Data Explorer** (`Microsoft.Kusto/Clusters`)
+  - Excluded zone: `privatelink.{regionName}.kusto.windows.net`
+  - Kept zones: `privatelink.blob.core.windows.net`, `privatelink.queue.core.windows.net`, `privatelink.table.core.windows.net`
+
+- **Azure Container Registry** (`Microsoft.ContainerRegistry/registries`)
+  - Excluded zone: `{regionName}.data.privatelink.azurecr.io`
+  - Kept zone: `privatelink.azurecr.io`
+
+- **Azure Backup** (`Microsoft.RecoveryServices/vaults`)
+  - Excluded zone: `privatelink.{regionCode}.backup.windowsazure.com`
+  - Kept zones: `privatelink.blob.core.windows.net`, `privatelink.queue.core.windows.net`
+
+- **Azure Static Web Apps** (`Microsoft.Web/staticSites`)
+  - Excluded zone: `privatelink.{partitionId}.azurestaticapps.net`
+  - Kept zone: `privatelink.azurestaticapps.net`
+
+### Note
+These zones require manual configuration with appropriate region codes, DNS prefixes, or partition IDs specific to your deployment environment.
 
